@@ -89,12 +89,7 @@ return (
        <div style={{marginLeft:'10px',width:'70%'}}>
           <div style={{width:'100%', 
                           height:'112px',
-                          background:'white',
-                          display:'flex', 
-                          flexDirection:'row',
-                          justifyContent:'space-between',  
-                          alignItems:'flex-end',
-                          gap:'10px',
+                          background:'white',display:'flex',flexDirection:'row',justifyContent:'space-between',alignItems:'flex-end', gap:'10px',
                           
                           }}> 
   
@@ -147,10 +142,8 @@ return (
       </div>
   
           <div style={{height:'10px'}}></div>
-  
+{/*  Redered List by flatList */}
       <FlatList list={data}  renderItem={listItems}></FlatList>  
-        
-  
       <div style={{height:'20px'}}></div>
       </div>
       </div>
