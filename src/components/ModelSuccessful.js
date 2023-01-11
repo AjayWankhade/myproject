@@ -89,7 +89,7 @@ return (
         <Modal isOpen={isOpenModel}
         style={{
         overlay: {
-          backgroundColor: 'rgba(255, 255, 255, 0.7)'
+          backgroundColor: 'rgba(0, 0, 0, 0.3)'
         },
         content: {marginTop:'150px',height:'320px',background: 'white',borderRadius: '10px',outline: 'none'}}}>
         <div>
