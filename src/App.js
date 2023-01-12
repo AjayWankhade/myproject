@@ -4,6 +4,7 @@ import { QueryClientProvider, QueryClient } from 'react-query';
 //react Routing import
 import Planet from './Component/Planet';
 import ModelSuccessful from './Component/ModelSuccessful';
+import FormValidation_ApiIntegration from './Component/FormValidation_ApiIntegration';
 
 
 export const queryClient = new QueryClient();
@@ -18,6 +19,7 @@ function App() {
   
      
 {/* <Planet></Planet> */}
+// FormValidation_ApiIntegration
 
 <ModelSuccessful></ModelSuccessful>
     </div>
