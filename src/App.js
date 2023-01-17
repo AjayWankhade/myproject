@@ -1,25 +1,36 @@
-import logo from './logo.svg';
+import React from 'react'
 import './App.css';
+import { useState,useEffect } from 'react';
+import { QueryClientProvider, QueryClient } from 'react-query';
+//react Routing import
+import Planet from './Component/Planet';
+import ModelSuccessful from './Component/ModelSuccessful';
+import FormValidation_ApiIntegration from './Component/FormValidation_ApiIntegration';
+import axios from 'axios';
+import {Routes, Route} from 'react-router-dom';
+import Registration_11 from './Component/Registration_11';
+import Task_10route from './Component/Task_10route';
+
+
+ const queryClient = new QueryClient();
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+    <QueryClientProvider client={queryClient} >
+    <div className="App" >
+    {/* <Planet></Planet>  */}
+     
+       <Task_10route></Task_10route>
+       <Registration_11></Registration_11>
+   {/* <FormValidation_ApiIntegration></FormValidation_ApiIntegration>  */}
+{/* <ModelSuccessful></ModelSuccessful> */}
     </div>
+    </QueryClientProvider>
+
   );
+  
 }
 
 export default App;
